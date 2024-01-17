@@ -4,7 +4,7 @@
             <div class="box-header with-border">
               <h3 class="box-title">Data Arsip</h3>
               <?php
-              if(session()->get('level')!=4) { ?>
+              if(in_array(session()->get('level'), [2, 3])) { ?>
                 <div class="box-tools pull-right">
                   <a href="<?= base_url('arsipkeluar/add')?>" class="btn btn-primary btn-sm btn-flat" style="border: 1px solid white; border-radius: 3px;">
                     <i class="fa fa-plus"></i> Add</a>
