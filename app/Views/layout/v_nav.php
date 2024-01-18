@@ -1,4 +1,4 @@
-<!-- Collect the nav links, forms, and other content for toggling -->
+<!-- Main Navbar container-->
 <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="<?= base_url('home')?>">Home</a></li>
@@ -26,13 +26,13 @@
             <li class="dropdown user user-menu">
               <!-- Menu Toggle Button -->
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <!-- The user image in the navbar-->
+                <!-- Gambar User di Navbar -->
                 <img src="<?= base_url('foto/'. session()->get('foto')) ?>" class="user-image" alt="User Image">
                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
                 <span class="hidden-xs"> <?= (session()->get('nama_user')) ?> </span>
               </a>
               <ul class="dropdown-menu">
-                <!-- The user image in the menu -->
+                <!-- Gambar User di Menu setelah di klik -->
                 <li class="user-header" style="height: 200px;">
                   <img src="<?= base_url('foto/'. session()->get('foto')) ?>" class="img-circle" alt="User Image" style="height: 120px; width: 115px;">
                   <p>
