@@ -18,7 +18,7 @@ class Profile extends BaseController{
         $data = array(
             'title' => 'Profile',
             'user' => $this->Model_user->all_data(),
-            'isi'   => 'profile/v_profilee',
+            'isi'   => 'profile/v_profile',
         );
         return view('Layout/v_wrapper', $data);
     }
