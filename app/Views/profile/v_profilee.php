@@ -25,7 +25,7 @@
                     <input name="password" value="<?= (session()->get('password')) ?>" class="form-control" readonly>
                 </div>
                 <div class="form-group">
-                    <label> Level </label>
+                    <label> Role </label>
                     <input name="password" value="<?php if(session()->get('level')==1){
                         echo 'Direktur Utama';
                     }else if (session()->get('level')==2){
@@ -38,8 +38,30 @@
 
                 </div>
                 <div class="form-group">
-                    <label> Departemen </label>
-                    <input name="password" value="<?= (session()->get('level')) ?>" class="form-control" readonly>
+                    <label> Jabatan </label>
+                    <input name="text" value="<?php if (session()->get('id_dep')==1) {
+                        echo 'Dewan Komisaris';
+                    }else if (session()->get('id_dep')==2) {
+                        echo 'Direktur Utama';
+                    }else if (session()->get('id_dep')==3) {
+                        echo 'Direktur Penjaminan';
+                    }else if (session()->get('id_dep')==4) {
+                        echo 'Sekretaris Perusahaan';
+                    } else if (session()->get('id_dep')==5) {
+                        echo 'Kabag Legal & Subrograsi';
+                    }else if (session()->get('id_dep')==6) {
+                        echo 'Kabag Penjaminan & Pemasaran';
+                    }else if (session()->get('id_dep')==7) {
+                        echo 'Kabag Keuangan, Administrasi & Umum';
+                    }else if (session()->get('id_dep')==8) {
+                        echo 'Satuan Pengawas Internal';
+                    }else if (session()->get('id_dep')==9) {
+                        echo 'Staff Keuangan, Administrasi & Umum';
+                    }else if (session()->get('id_dep')==10) {
+                        echo 'Staff Penjaminan & Pemasaran';
+                    } else if (session()->get('id_dep')==11) {
+                        echo 'Staff Legal & Subrogasi';
+                    } ?>" class="form-control" readonly>  
                 </div>
           </div>
           <!-- /.widget-user -->
