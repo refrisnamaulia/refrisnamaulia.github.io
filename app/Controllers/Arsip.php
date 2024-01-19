@@ -36,7 +36,7 @@ class Arsip extends BaseController
     public function add()
     {
         $data = array(
-            'title' => 'Tambahkan Laporan Kearsipan',
+            'title' => 'Tambah Data Arsip Surat Masuk',
             'arsip' => $this->Model_arsip->all_data(),
             'isi'   => 'arsip/v_add'
 
@@ -159,7 +159,7 @@ class Arsip extends BaseController
     }
     public function edit($id_arsip){
         $data = array(
-            'title' => 'Edit Arsip',
+            'title' => 'Edit Data Arsip Surat Masuk',
             'dep' => $this->Model_dep->all_data(),
             'user' => $this->Model_user->all_data(),
             'arsip' => $this->Model_arsip->detail_data($id_arsip),

@@ -34,7 +34,7 @@ class ArsipKeluar extends BaseController
     public function add()
     {
         $data = array(
-            'title' => 'Tambahkan Laporan Kearsipan',
+            'title' => 'Tambah Data Arsip Surat Keluar',
             'arsipkeluar' => $this->Model_arsip_keluar->all_data(),
             'isi'   => 'arsipkeluar/v_add'
 
@@ -148,7 +148,7 @@ class ArsipKeluar extends BaseController
     }
     public function edit($id_arsipklr){
         $data = array(
-            'title' => 'Edit Arsip Keluar',
+            'title' => 'Edit Data Arsip Surat Keluar',
             'dep' => $this->Model_dep->all_data(),
             'user' => $this->Model_user->all_data(),
             'arsipkeluar' => $this->Model_arsip_keluar->detail_data($id_arsipklr),

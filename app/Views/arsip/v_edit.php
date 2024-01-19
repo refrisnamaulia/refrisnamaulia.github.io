@@ -31,7 +31,7 @@
                 </div>
                 <div class="form-group">
                     <label> Tanggal Surat </label>
-                    <input name="tgl_surat" value="<?= $arsip['tgl_surat'] ?>" class="form-control" id="tgl_surat" name="tgl_surat" placeholder="YYYY/MM/DD">
+                    <input name="tgl_surat" value="<?= $arsip['tgl_surat'] ?>" class="form-control" id="tgl_surat" name="tgl_surat">
                 </div>
                 <div class="form-group">
                     <label> Alamat Pengirim </label>
