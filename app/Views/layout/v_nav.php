@@ -1,4 +1,14 @@
 <!-- Main Navbar container-->
+<style>
+  @media (max-width: 768px) {
+    .dropdown-menu {
+      margin-top: 0;
+    }
+  }
+  .dropdown-menu{
+    margin-top: 50px;
+  }
+</style>
 <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="<?= base_url('home')?>">Home</a></li>
@@ -6,13 +16,13 @@
 
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Arsip Surat <span class="caret"></span></a>
-              <ul class="dropdown-menu" style="top: 0; left: 0%; margin-top: 50px;">
+              <ul class="dropdown-menu" >
                 <li class="dropdown-submenu" style="position: relative; top: 0; left: 0%; margin-top: -1px;">
-                  <a class="test" href="#">Jenis Surat <span class="caret"></span></a>
-                  <ul class="dropdown-menu" style="position: relative; top: -26px; left: 100%; margin-top: -1px;">
+                  <!-- <a class="test" href="#">Jenis Surat <span class="caret"></span></a>: -->
+                  <!-- <ul class="dropdown-menu" style="position: relative; top: -26px; left: 100%; margin-top: -1px;">  -->
                     <li><a tabindex="-1" href="<?= base_url('arsip')?>">Surat Masuk</a></li>
                     <li><a tabindex="-1" href="<?= base_url('arsipkeluar')?>">Surat Keluar</a></li>
-                  </ul>
+                  <!-- </ul> -->
                 </li>
               </ul>
             </li>
@@ -87,13 +97,17 @@
       </section>
       <!-- Main content -->
       <section class="content">
-<script>
-$(document).ready(function(){
-  $('.dropdown-submenu a.test').on("click", function(e){
-    $(this).next('ul').toggle();
-    e.stopPropagation();
-    e.preventDefault();
+      <script>
+  $(document).ready(function(){
+    // Aktifkan dropdown untuk bagian "Arsip Surat" saat kursor diarahkan
+    $('.dropdown').hover(function() {
+      $(this).addClass('open');
+    }, function() {
+      $(this).removeClass('open');
+    });
   });
-});
+
+  
 </script>
+
       

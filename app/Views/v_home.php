@@ -1,3 +1,9 @@
+<style>
+  .col-lg-3 {
+    width: 33%;
+   
+}
+</style>
 <div class="row">
   <div class="col-lg-3 col-xs-6">
           <!-- small box -->
@@ -29,8 +35,7 @@
           </div>
   </div>
   <!-- ./col -->
-  <div class="col-md-3">
-  </div>
+ 
   <div class="col-lg-3 col-xs-6">
           <!-- small box -->
           <div class="small-box bg-yellow">
@@ -45,10 +50,5 @@
             <a href="<?= base_url('user')?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
   </div>
-  <div class="col-md-3">
-  </div>
- <!-- ./col -->
-<!-- ./col -->
-        <!-- ./col -->
+ 
 </div>
-      
